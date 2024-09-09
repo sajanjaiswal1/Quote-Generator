@@ -134,4 +134,11 @@ p{
   opacity: 1;
 }
 
+#category-select{
+  background-color: var(--background-color);
+  color: var(--text-color);
+border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
 

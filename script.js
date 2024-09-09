@@ -24,18 +24,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
 let filteredQuotes = data;
 let currentQuoteIndex = 0;
 
-function showrandom(){
-  const randomIndex = Math.floor(Math.random()* data.length);
-
-  const randomQuote = data[randomIndex].quote;
-  const randomAuthor = data[randomIndex].author;
-
-  document.getElementById('quote').textContent = `${randomQuote}`
-  document.getElementById('author').textContent = `- ${randomAuthor}`
+function filterByCategory(category) {
+  return category === 'all' ? data : data.filter(quote => quote.category === category);
 }
 
-document.getElementById('rand-btn').addEventListener('click', showrandom);
-window.onload = showrandom;
+
+function displayQuote(index) {
+  const quote = filteredQuotes[index];
+  if (quote) {
+    document.getElementById('quote').textContent = quote.quote;
+    document.getElementById('author').textContent = `- ${quote.author}`;
+  }
+}
+
+function showRandomQuote() {
+  currentQuoteIndex = Math.floor(Math.random() * filteredQuotes.length);
+  displayQuote(currentQuoteIndex);
+}
+
+function showNextQuote() {
+  currentQuoteIndex = (currentQuoteIndex + 1) % filteredQuotes.length;
+  displayQuote(currentQuoteIndex);
+}
+
+function showPreviousQuote() {
+  currentQuoteIndex = (currentQuoteIndex - 1 + filteredQuotes.length) % filteredQuotes.length;
+  displayQuote(currentQuoteIndex);
+}
+
+document.getElementById('category-select').addEventListener('change', () => {
+  const selectedCategory = document.getElementById('category-select').value;
+  filteredQuotes = filterByCategory(selectedCategory);
+  currentQuoteIndex = 0;
+  displayQuote(currentQuoteIndex);
+});
+
+document.getElementById('rand-btn').addEventListener('click', showRandomQuote);
+document.getElementById('next-btn').addEventListener('click', showNextQuote);
+document.getElementById('prev-btn').addEventListener('click', showPreviousQuote);
+
+
+window.onload = () => displayQuote(currentQuoteIndex);
