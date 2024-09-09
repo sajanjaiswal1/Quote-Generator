@@ -82,6 +82,12 @@ h1 {
   font-style: italic;
   font-size: 1.5rem; 
 }
+h2{
+ margin-bottom: 2rem;
+ font-size: 2rem;
+ color: var(--text-color);
+ border-bottom: 6px dotted var(--text-color) ;
+}
 
 hr {
   background-color: var(--background-color2);
