@@ -27,6 +27,7 @@ body {
   justify-content: center;
   height: 100vh;
   flex-direction: column;
+  margin: 2rem;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
   padding: 1rem;
   box-shadow: var(--box-shadow);
   border-radius: 0.625rem; 
-  margin: 1rem; 
+  margin: 1rem;
 }
 
 .radio-btn {
