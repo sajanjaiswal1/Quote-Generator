@@ -1,5 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const quoteEl = document.getElementById("quote");
+  const fontPlusBtn= document.getElementById("font-plus-btn");
+  const fontMinusBtn= document.getElementById("font-minus-btn");
   const themeToggleButton = document.getElementById("theme-toggle");
+
+  let fontSize = 16;
+  fontPlusBtn.addEventListener("click", ()=>{
+    fontSize +=2;
+    quoteEl.style.fontSize = `${fontSize}px`;
+  });
+
+  fontMinusBtn.addEventListener("click", () => {
+    // if (fontSize > 20) { 
+      fontSize -= 2; 
+      quoteEl.style.fontSize = `${fontSize}px`;
+    // }
+  });
 
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) {

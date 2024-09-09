@@ -11,14 +11,21 @@
 <body>
     <h2>Quote Generator</h2>
     <div class="theme-toggle">
-        <div class="radio-btn">
-            <p>Select a category:</p>
+        <div class="dropdown-btn">
+            <p>Category:</p>
             <select id="category-select">
                 <option value="All">All</option>
                 <option value="Life">Life</option>
                 <option value="Motivation">Motivation</option>
                 <option value="Science">Science</option>
             </select>
+        </div>
+        <div class="font-control">
+            <p class="font-text">Font Size:</p>
+            <div id="font-size-controls">
+                <button id="font-minus-btn">-</button>
+                <button id="font-plus-btn">+</button>
+            </div>
         </div>
         <button id="theme-toggle" class="hover-text">
             <img id="dark-light" class="darkLight" src="light.svg" alt="light icon" />
