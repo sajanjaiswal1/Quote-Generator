@@ -37,32 +37,32 @@ body {
   max-width: 600px;
   padding: 1rem;
   box-shadow: var(--box-shadow);
-  border-radius: 0.625rem; /* Changed to relative units */
-  margin: 1rem; /* Changed to relative units */
+  border-radius: 0.625rem; 
+  margin: 1rem; 
 }
 
 .radio-btn {
   display: flex;
   justify-content: space-between;
-  padding: 0.625rem; /* Changed to relative units */
+  padding: 0.625rem; 
 }
 
 .control-btn {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.625rem; /* Changed to relative units */
+  margin-bottom: 0.625rem; 
 }
 
 button {
   cursor: pointer;
   border: none;
   color: white;
-  font-size: 1rem; /* Changed to relative units */
+  font-size: 1rem;
   font-weight: 700;
   background-color: #172cb5d5;
-  padding: 0.625rem 1rem; /* Changed to relative units */
-  border-radius: 0.25rem; /* Changed to relative units */
-  transition: background-color 0.3s ease; /* Added transition for smooth effect */
+  padding: 0.625rem 1rem; 
+  border-radius: 0.25rem; 
+  transition: background-color 0.3s ease; 
 }
 
 button:hover {
@@ -71,7 +71,7 @@ button:hover {
 
 #author {
   align-self: flex-end;
-  margin-bottom: 0.625rem; /* Changed to relative units */
+  margin-bottom: 0.625rem; 
   font-weight: 100;
   font-style: italic;
 }
@@ -79,12 +79,12 @@ button:hover {
 h1 {
   text-align: center;
   font-style: italic;
-  font-size: 1.5rem; /* Added responsive font size */
+  font-size: 1.5rem; 
 }
 
 hr {
   background-color: var(--background-color2);
-  margin-bottom: 1.25rem; /* Changed to relative units */
+  margin-bottom: 1.25rem; 
 }
 
 #theme-toggle {
@@ -100,7 +100,7 @@ hr {
   width: 100%;
   max-width: 600px;
   box-shadow: var(--box-shadow);
-  border-radius: 0.625rem; /* Changed to relative units */
+  border-radius: 0.625rem;
 }
 
 p {
