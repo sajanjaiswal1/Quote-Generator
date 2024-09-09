@@ -60,6 +60,7 @@ function showPreviousQuote() {
 document.getElementById('category-select').addEventListener('change', () => {
   const selectedCategory = document.getElementById('category-select').value;
   filteredQuotes = filterByCategory(selectedCategory);
+  console.log(filteredQuotes)
   currentQuoteIndex = 0;
   displayQuote(currentQuoteIndex);
 });
