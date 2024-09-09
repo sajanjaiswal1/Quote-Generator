@@ -120,16 +120,17 @@ p {
 
 .tooltip-text {
   visibility: hidden;
-  width: 100px;
+  font-size: smaller;
+  width: 80px;
   background-color: rgba(0, 0, 0, 0.77);
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 0.375rem 0.625rem;
+  padding: 0.2rem 0.3rem;
   position: absolute;
   z-index: 1;
   bottom: 125%;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s ease;
