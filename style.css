@@ -191,6 +191,7 @@ p {
   background-color: var(--background-color);
   color: var(--text-color);
   border-radius: 0.125rem;
+  width: 5rem;
   border: none;
   cursor: pointer;
   padding: 0.2rem;
