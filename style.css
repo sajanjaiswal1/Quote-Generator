@@ -90,7 +90,11 @@ hr {
 #theme-toggle {
   width: 7%;
   margin: 0.4rem; 
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem;
+  min-width: 40px;
+}
+.darkLight{
+  max-width: 24px;
 }
 
 .theme-toggle {
