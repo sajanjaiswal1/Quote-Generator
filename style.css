@@ -27,7 +27,7 @@ body {
   justify-content: center;
   height: 100vh;
   flex-direction: column;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .container {
@@ -38,41 +38,48 @@ body {
   max-width: 600px;
   padding: 1rem;
   box-shadow: var(--box-shadow);
-  border-radius: 0.625rem; 
+  border-radius: 0.625rem;
   margin: 1rem;
 }
 
 .dropdown-btn {
   display: flex;
   justify-content: space-between;
-  padding: 0.625rem; 
+  padding: 0.625rem;
 }
 
 .control-btn {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.625rem; 
+  margin-bottom: 0.625rem;
 }
 
-#prev-btn, #next-btn, #rand-btn {
+#prev-btn,
+#next-btn,
+#rand-btn {
   cursor: pointer;
   border: none;
   color: white;
   font-size: 1rem;
   font-weight: 700;
   background-color: #172cb5d5;
-  padding: 0.55rem 1rem; 
-  border-radius: 0.25rem; 
-  transition: background-color 0.3s ease; 
+  padding: 0.55rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
 }
 
-#prev-btn:hover, #next-btn:hover, #rand-btn:hover, #font-minus-btn:hover, #font-plus-btn:hover, #theme-toggle:hover {
+#prev-btn:hover,
+#next-btn:hover,
+#rand-btn:hover,
+#font-minus-btn:hover,
+#font-plus-btn:hover,
+#theme-toggle:hover {
   background-color: #10197b;
 }
 
 #author {
   align-self: flex-end;
-  margin-bottom: 0.625rem; 
+  margin-bottom: 0.625rem;
   font-weight: 100;
   font-style: italic;
 }
@@ -80,27 +87,27 @@ body {
 h1 {
   text-align: center;
   font-style: italic;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
-h2{
- margin-bottom: 2rem;
- font-size: 2rem;
- color: var(--text-color);
- border-bottom: 6px dotted var(--text-color) ;
+h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  border-bottom: 6px dotted var(--text-color);
 }
 
 hr {
   background-color: var(--background-color2);
-  margin-bottom: 1.25rem; 
+  margin-bottom: 1.25rem;
 }
 
 #theme-toggle {
   width: 7%;
-  margin: 0.4rem; 
+  margin: 0.4rem;
   padding: 0.25rem;
   min-width: 40px;
 }
-.darkLight{
+.darkLight {
   max-width: 24px;
   margin-top: 0.2rem;
   margin-left: 0.08rem;
@@ -117,9 +124,9 @@ hr {
 }
 
 p {
-  font-size: 1rem; 
+  font-size: 0.8;
   margin-right: 0.5rem;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
 }
 
 .hover-text {
@@ -131,26 +138,30 @@ p {
   font-size: 1rem;
   font-weight: 700;
   background-color: #172cb5d5;
-  border-radius: 0.25rem; 
-  transition: background-color 0.3s ease; 
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
 }
-#font-minus-btn, #font-plus-btn{
-  padding: 0.28rem 0.78rem;
+#font-minus-btn,
+#font-plus-btn {
+  padding: 0.01rem 0.3rem;
   background-color: #172cb5d5;
   color: #fff;
   cursor: pointer;
   border: none;
   font: bolder;
   font-size: larger;
-  border-radius: 0.25rem; 
+  border-radius: 0.25rem;
 }
-.font-control{
-  margin-top: 0.4rem;
+.font-control {
+  margin-top: 0.8rem;
   display: flex;
 }
-.font-text{
-  margin-top: 0.4rem;
-
+.font-text {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+#font-btn-control {
+  display: flex;
 }
 
 .tooltip-text {
@@ -183,18 +194,17 @@ p {
   border: none;
   cursor: pointer;
   padding: 0.2rem;
+  font-size: 0.8rem;
 }
-
-
 
 @media (max-width: 768px) {
   .container {
-    padding: 0.5rem; 
+    padding: 0.5rem;
     margin: 0.5rem;
   }
 
   button {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     padding: 0.5rem 0.75rem;
   }
 
