@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.setAttribute("data-theme", savedTheme);
 
     const themeIcon = document.getElementById("dark-light");
-    const newIconSrc = savedTheme === "light" ? "light.svg" : "dark.svg";
+    const newIconSrc = savedTheme === "light" ? "dark.svg" : "light.svg";
     themeIcon.setAttribute("src", newIconSrc);
   }
 
   themeToggleButton.addEventListener("click", () => {
-    const currentTheme = document.body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    const currentTheme = document.body.getAttribute("data-theme") === "light" ? "dark" : "light";
     document.body.setAttribute("data-theme", currentTheme);
 
     localStorage.setItem("theme", currentTheme);
