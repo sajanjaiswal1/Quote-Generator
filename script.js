@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fontMinusBtn= document.getElementById("font-minus-btn");
   const themeToggleButton = document.getElementById("theme-toggle");
 
-  let fontSize = 16;
+  let fontSize = 20;
   fontPlusBtn.addEventListener("click", ()=>{
     fontSize +=2;
     quoteEl.style.fontSize = `${fontSize}px`;
